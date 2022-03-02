@@ -26,7 +26,7 @@ namespace CloudSaving.Forms
             //diretorio local
             using (var fbd = new FolderBrowserDialog())
             {
-                //MessageBox.Show("Selecione a pasta do save local");
+                MessageBox.Show("Selecione a pasta do save local");
                 fbd.Description = "Selecione a pasta do save Local";
                 fbd.UseDescriptionForTitle = true;
                 DialogResult result = fbd.ShowDialog();
@@ -45,7 +45,7 @@ namespace CloudSaving.Forms
             //diretorio na nuvem
             using (var fbd = new FolderBrowserDialog())
             {
-                //MessageBox.Show("Selecione a pasta na nuvem");
+                MessageBox.Show("Selecione a pasta na nuvem");
                 fbd.Description = "Selecione a pasta na nuvem";
                 fbd.UseDescriptionForTitle = true;
                 DialogResult result = fbd.ShowDialog();

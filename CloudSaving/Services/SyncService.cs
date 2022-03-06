@@ -36,6 +36,25 @@ namespace CloudSaving.Services
             }
         }
 
+        public static bool DownSaves(string directoryOrigin, string directoryDestiny)
+        {
+            try
+            {
+                string folderName = new DirectoryInfo(directoryOrigin).Name;
+                string destiny = string.Format("{0}\\{1}", directoryDestiny, folderName);
+
+                DirectoryInfo directory = new DirectoryInfo(destiny);
+
+                Directory.CreateSymbolicLink(destiny, directory.FullName);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+
         public static bool RemoveSyncSave(string name)
         {
             try

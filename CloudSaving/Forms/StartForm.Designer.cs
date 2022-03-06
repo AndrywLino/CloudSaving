@@ -34,6 +34,7 @@
             this.btnRemoveSave = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.LblGames = new System.Windows.Forms.Label();
+            this.BtnDownSaves = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,17 +48,17 @@
             // 
             // btnSyncSaves
             // 
-            this.btnSyncSaves.Location = new System.Drawing.Point(245, 133);
+            this.btnSyncSaves.Location = new System.Drawing.Point(414, 133);
             this.btnSyncSaves.Name = "btnSyncSaves";
             this.btnSyncSaves.Size = new System.Drawing.Size(136, 44);
             this.btnSyncSaves.TabIndex = 4;
-            this.btnSyncSaves.Text = "Sincronizar saves";
+            this.btnSyncSaves.Text = "Colocar Saves em nuvem";
             this.btnSyncSaves.UseVisualStyleBackColor = true;
             this.btnSyncSaves.Click += new System.EventHandler(this.SyncSaves_Click);
             // 
             // btnRemoveSave
             // 
-            this.btnRemoveSave.Location = new System.Drawing.Point(414, 133);
+            this.btnRemoveSave.Location = new System.Drawing.Point(245, 133);
             this.btnRemoveSave.Name = "btnRemoveSave";
             this.btnRemoveSave.Size = new System.Drawing.Size(136, 44);
             this.btnRemoveSave.TabIndex = 2;
@@ -83,11 +84,22 @@
             this.LblGames.TabIndex = 1;
             this.LblGames.Text = "-> Elden Ring\r\n-> God Of War\r\n-> Pokemon\r\n-> Zelda";
             // 
+            // BtnDownSaves
+            // 
+            this.BtnDownSaves.Location = new System.Drawing.Point(414, 83);
+            this.BtnDownSaves.Name = "BtnDownSaves";
+            this.BtnDownSaves.Size = new System.Drawing.Size(136, 44);
+            this.BtnDownSaves.TabIndex = 5;
+            this.BtnDownSaves.Text = "Baixar Saves da nuvem";
+            this.BtnDownSaves.UseVisualStyleBackColor = true;
+            this.BtnDownSaves.Click += new System.EventHandler(this.BtnDownSaves_Click);
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 298);
+            this.Controls.Add(this.BtnDownSaves);
             this.Controls.Add(this.LblGames);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnRemoveSave);
@@ -111,5 +123,6 @@
         private Button btnRemoveSave;
         private Label label2;
         private Label LblGames;
+        private Button BtnDownSaves;
     }
 }

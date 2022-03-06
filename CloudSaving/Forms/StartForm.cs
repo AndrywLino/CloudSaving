@@ -157,9 +157,17 @@ namespace CloudSaving.Forms
             bool sync = SyncService.DownSaves(directoryOrigin, directoryDestiny);
             if (sync)
             {
+                string folderName = new DirectoryInfo(directoryDestiny).Name;
+                bool text = TxtService.WriteTxt(directoryDestiny, directoryOrigin, folderName);
                 LoadSavesText();
-                MessageBox.Show("Saves Adicionados!!!");
+                MessageBox.Show("Saves Sincronizados!!!");
             }
+        }
+
+        private void BtnAjuda_Click(object sender, EventArgs e)
+        {
+            Form help = new HelpForm();
+            help.ShowDialog();
         }
     }
 }

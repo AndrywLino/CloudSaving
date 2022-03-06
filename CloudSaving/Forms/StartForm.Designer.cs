@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.LblGames = new System.Windows.Forms.Label();
             this.BtnDownSaves = new System.Windows.Forms.Button();
+            this.BtnAjuda = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -48,11 +49,11 @@
             // 
             // btnSyncSaves
             // 
-            this.btnSyncSaves.Location = new System.Drawing.Point(414, 133);
+            this.btnSyncSaves.Location = new System.Drawing.Point(245, 83);
             this.btnSyncSaves.Name = "btnSyncSaves";
             this.btnSyncSaves.Size = new System.Drawing.Size(136, 44);
             this.btnSyncSaves.TabIndex = 4;
-            this.btnSyncSaves.Text = "Colocar Saves em nuvem";
+            this.btnSyncSaves.Text = "Colocar saves em nuvem";
             this.btnSyncSaves.UseVisualStyleBackColor = true;
             this.btnSyncSaves.Click += new System.EventHandler(this.SyncSaves_Click);
             // 
@@ -62,7 +63,7 @@
             this.btnRemoveSave.Name = "btnRemoveSave";
             this.btnRemoveSave.Size = new System.Drawing.Size(136, 44);
             this.btnRemoveSave.TabIndex = 2;
-            this.btnRemoveSave.Text = "Remover save da nuvem";
+            this.btnRemoveSave.Text = "Remover saves da nuvem";
             this.btnRemoveSave.UseVisualStyleBackColor = true;
             this.btnRemoveSave.Click += new System.EventHandler(this.btnRemoveSave_Click);
             // 
@@ -90,15 +91,26 @@
             this.BtnDownSaves.Name = "BtnDownSaves";
             this.BtnDownSaves.Size = new System.Drawing.Size(136, 44);
             this.BtnDownSaves.TabIndex = 5;
-            this.BtnDownSaves.Text = "Baixar Saves da nuvem";
+            this.BtnDownSaves.Text = "Baixar saves da nuvem";
             this.BtnDownSaves.UseVisualStyleBackColor = true;
             this.BtnDownSaves.Click += new System.EventHandler(this.BtnDownSaves_Click);
+            // 
+            // BtnAjuda
+            // 
+            this.BtnAjuda.Location = new System.Drawing.Point(414, 133);
+            this.BtnAjuda.Name = "BtnAjuda";
+            this.BtnAjuda.Size = new System.Drawing.Size(136, 44);
+            this.BtnAjuda.TabIndex = 6;
+            this.BtnAjuda.Text = "Como usar este programa?";
+            this.BtnAjuda.UseVisualStyleBackColor = true;
+            this.BtnAjuda.Click += new System.EventHandler(this.BtnAjuda_Click);
             // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 298);
+            this.Controls.Add(this.BtnAjuda);
             this.Controls.Add(this.BtnDownSaves);
             this.Controls.Add(this.LblGames);
             this.Controls.Add(this.label2);
@@ -124,5 +136,6 @@
         private Label label2;
         private Label LblGames;
         private Button BtnDownSaves;
+        private Button BtnAjuda;
     }
 }

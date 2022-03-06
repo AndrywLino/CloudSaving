@@ -1,0 +1,82 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label3.Text" xml:space="preserve">
+    <value>1 - Para subir seus saves para um servidor de nuvem siga os passos abaixo
+
+-&gt; Clique em Colocar Saves em nuvem
+-&gt; Selecione a pasta LOCAL onde esta seu save (na pagina inicial contém exemplos de onde normalmente ficam localizado os saves)
+-&gt; Selecione a pasta da NUVEM  onde seu save ira ficar Obs Importante. é necessario ter o aplicativo do OneDrive, GoogleDrive outros instalado.
+-&gt; Pronto, seu save ja esta linkado com a nuvem, e você pode continuar jogando normalmente. automaticamente seu save ja estava salvo em Nuvem.</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>2 - Para baixar seus saves em outra maquina ou caso tenha formatado a sua siga esses passos.
+
+-&gt; Clique em Baixar saves da nuvem
+-&gt; Selecione a pasta da NUVEM  onde seu save ira ficar
+-&gt; Selecione a pasta LOCAL onde esta seu save
+-&gt; Pronto save da nuvem baixado e linkado.
+
+Caso tenha duvidas de onde fica o local original do save, dentro da pasta onde o save em nuvem esta, tera uma 
+pasta chamada CloudSaving dentro dessa pasta tem arquivos TXT com os diretorios em nuvem e originais do save.
+
+Importante!!!
+NUNCA MUDE O DIRETORIO DESSES ARQUIVOS, POIS ASSIM PODERA PERDER SEU SAVE.</value>
+  </data>
+</root>

@@ -45,7 +45,7 @@ namespace CloudSaving.Services
 
                 DirectoryInfo directory = new DirectoryInfo(destiny);
 
-                Directory.CreateSymbolicLink(destiny, directory.FullName);
+                Directory.CreateSymbolicLink(directory.FullName, directoryOrigin);
                 return true;
             }
             catch (Exception ex)
